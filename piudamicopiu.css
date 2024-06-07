@@ -85,6 +85,20 @@ body {
   color: black;
 }
 
+.dropdown-products > a {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+
+.dropdown-products > a:hover {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 17.5px;
+}
+
 .container-header {
   position: relative;
   background-color: rgba(0, 0, 0, 0.188);
