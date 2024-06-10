@@ -221,7 +221,7 @@
             <div class="infissi-title">
               <h3>LE NOSTRE TIPOLOGIE DI INFISSI</h3>
             </div>
-            <hr style="height: 10px; width: 85%" />
+            <hr style="height: 10px; width: 85%; border-radius: 6px" />
 
             <div class="container-infissi-list">
               <ul class="infissi-list">
@@ -233,8 +233,13 @@
                       alt="..."
                   /></a>
                   <div class="card-body">
-                    <a href="" class="card-title">LEGNO</a>
-                    <p class="card-text">
+                    <a
+                      href="./pages/infissi-legno.html"
+                      class="card-title"
+                      style="color: #a27947; font-weight: 700; font-size: 20px"
+                      >LEGNO</a
+                    >
+                    <p class="card-text" style="color: #a27947">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       A, quas.
                     </p>
@@ -248,8 +253,13 @@
                       alt="..."
                   /></a>
                   <div class="card-body">
-                    <a href="" class="card-title">ALLUMINIO</a>
-                    <p class="card-text">
+                    <a
+                      href="./pages/infissi-alluminio.html"
+                      class="card-title"
+                      style="color: gray; font-weight: 700; font-size: 20px"
+                      >ALLUMINIO</a
+                    >
+                    <p class="card-text" style="color: gray">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       A, quas.
                     </p>
@@ -263,8 +273,13 @@
                       alt="..."
                   /></a>
                   <div class="card-body">
-                    <a href="" class="card-title">LEGNO-ALLUMINIO</a>
-                    <p class="card-text">
+                    <a
+                      href="./pages/infissi-legno-alluminio.html"
+                      class="card-title"
+                      style="color: gray; font-weight: 700; font-size: 20px"
+                      >LEGNO/ALLUMINIO</a
+                    >
+                    <p class="card-text" style="color: gray">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       A, quas.
                     </p>
@@ -278,8 +293,13 @@
                       alt="..."
                   /></a>
                   <div class="card-body">
-                    <a href="" class="card-title">PVC</a>
-                    <p class="card-text">
+                    <a
+                      href="./pages/infissi-pvc.html"
+                      class="card-title"
+                      style="color: #a1b7c0; font-weight: 700; font-size: 20px"
+                      >PVC</a
+                    >
+                    <p class="card-text" style="color: #a1b7c0">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       A, quas.
                     </p>
@@ -312,6 +332,8 @@
             </div>
           </div>
 
+          <hr class="divider2" style="height: 4px; width: 25%" />
+
           <div class="container-text2">
             <div class="text-title2"><h3>I SERVIZI CHE OFFRIAMO</h3></div>
             <div class="text2">
@@ -340,17 +362,38 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                 corporis, reiciendis quia, quidem asperiores doloremque
               </p>
+              <button style="width: 10%">Prenota</button>
             </div>
           </div>
 
           <div class="container-text4">
-            <div class="text-title4"><h3>VUOI PIù INFORMAZIONI?</h3></div>
-            <div class="text-subtitle4"><h4>Contattaci</h4></div>
+            <div class="text-title4"><h3>VUOI PIÙ INFORMAZIONI?</h3></div>
+            <div class="text-subtitle4">
+              <h4>Contattaci o riempi il form</h4>
+            </div>
+            <div class="container-contacts">
+              <ul class="contacts-list">
+                <a href="mailto:info@damicopiu.it"
+                  ><i class="fa-regular fa-envelope" style="color: #f00505"></i>
+                  info@damicopiu.it</a
+                >
+                <a href="https://www.instagram.com/damicopiu/"
+                  ><i class="fa-brands fa-instagram" style="color: #f00505"></i>
+                  Instagram</a
+                >
+                <a href="https://www.facebook.com/damicopiu"
+                  ><i class="fa-brands fa-facebook" style="color: #f00505"></i>
+                  Facebook</a
+                >
+                <a href="whatsapp://send?phone=+393939142355"
+                  ><i class="fa-brands fa-whatsapp" style="color: #f00505"></i>
+                  +39 3939142355</a
+                >
+              </ul>
+            </div>
+            <hr class="divider3" />
             <div class="container-form">
-              <form
-                action="mailto:davidedamico89@gmail.com"
-                class="contacts-form"
-              >
+              <form action="mailto:info@damicopiu.it" class="contacts-form">
                 <label class="input-label" for="">Nome Completo</label>
                 <input
                   class="input-field"
@@ -360,22 +403,20 @@
                 <label class="input-label">E-mail</label>
                 <input
                   class="input-field"
-                  placeholder="esempio@email.com"
+                  placeholder="esempio@gmail.com"
                   type="email"
                 />
                 <label class="input-label" for="">Oggetto</label>
                 <input
                   class="input-field"
-                  placeholder="Esempio Oggetto"
+                  placeholder="Oggetto"
                   type="oggetto"
                 />
 
-                <label class="input-label" for=""
-                  >Messaggio <span>opzionale</span></label
-                >
+                <label class="input-label" for="">Messaggio</label>
                 <textarea
                   class="input-textarea"
-                  placeholder="Esempio Textarea"
+                  placeholder="Area di testo"
                 ></textarea>
                 <button class="button2">Invia</button>
               </form>

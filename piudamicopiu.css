@@ -10,6 +10,8 @@
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .container-box {
@@ -82,6 +84,12 @@ body {
   background-color: rgb(236, 235, 235);
   border: none;
   color: black;
+}
+
+.dropdown > a:hover {
+  background-color: rgb(236, 235, 235);
+  color: black;
+  border: none;
 }
 
 .dropdown-products > a {
@@ -185,12 +193,9 @@ span {
   text-align: center;
 }
 
-.card-body > a {
-  text-decoration: none;
-  color: black;
-}
-
+.card-body > a,
 .card-body > a:hover {
+  text-decoration: none;
   color: black;
 }
 
@@ -208,12 +213,19 @@ span {
 .text > p {
 }
 
+.divider2 {
+  position: relative;
+  left: 725px;
+  background-color: red;
+  border-radius: 6px;
+}
+
 .container-text2 {
   display: flex;
   flex-direction: column;
   text-align: end;
-  margin: 100px 0px 100px 60px;
-  margin-left: 700px;
+  margin-top: 100px;
+  margin-left: 690px;
   width: 60%;
 }
 
@@ -235,33 +247,140 @@ span {
 
 .text-title3 > h3 {
   color: white;
+  margin-bottom: 40px;
+}
+
+.text3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .text3 > p {
   color: white;
 }
 
+.text3 > button {
+  font-size: 16px;
+  color: black;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 6px 0px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.text3 > button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
 .container-text4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  margin: 120px 60px 60px 60px;
 }
 
 .text-title4 {
+  position: relative;
+  left: 400px;
+  top: 100px;
+  width: 345px;
 }
 
 .text-subtitle4 {
+  position: relative;
+  left: 400px;
+  top: 120px;
+  width: 345px;
+}
+
+.container-contacts {
+  position: relative;
+  left: 400px;
+  top: 140px;
+  width: 20%;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 200px;
+  gap: 16px;
+}
+
+.contacts-list > a {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts-list > a:hover {
+  color: red;
+}
+
+.divider3 {
+  position: relative;
+  width: 38%;
+  padding: 2px;
+  margin: 0px;
+  border-radius: 12px;
+  background-color: red;
+  top: 150px;
+  left: 48%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.container-form {
+  position: relative;
+  top: -140px;
+  left: 55%;
+  width: 80%;
 }
 
 .contacts-form {
   display: flex;
   flex-direction: column;
+  width: 30%;
   gap: 20px;
-  width: 35%;
 }
 
 .input-label {
+  font-size: 20px;
 }
 
 .input-field {
+  padding: 10px;
+  border: 2px red solid;
+  border-radius: 12px;
+}
+
+.input-field:focus {
+  border: 2px red solid;
 }
 
 .input-textarea {
+  padding: 10px;
+  border: 2px red solid;
+  border-radius: 12px;
+}
+
+.button2 {
+  position: relative;
+  padding: 10px;
+  border: 2px red solid;
+  border-radius: 12px;
+  left: 375px;
+  top: 20px;
+  width: 60px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.button2:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
 }
