@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: rgb(236, 235, 235);
 }
 
 .top-bar {
@@ -35,6 +35,7 @@ body {
 }
 
 .left-items {
+  position: sticky;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -51,7 +52,6 @@ body {
 
 .email > a:hover {
   color: red;
-  font-size: 15.5px;
 }
 
 .right-items {
@@ -76,11 +76,10 @@ body {
 
 .items-menu > li > a:hover {
   color: red;
-  font-size: 15.5px;
 }
 
 .dropdown > a {
-  background-color: whitesmoke;
+  background-color: rgb(236, 235, 235);
   border: none;
   color: black;
 }
@@ -96,12 +95,11 @@ body {
   background-color: transparent;
   border: none;
   color: red;
-  font-size: 17.5px;
 }
 
 .container-header {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.188);
+  background-color: whitesmoke;
   padding: 20px 0 20px 0;
   z-index: 1;
 }
@@ -132,16 +130,18 @@ span {
 
 .menu-list > a:hover {
   color: red;
-  font-size: 17.5px;
 }
 
-.carousel-container {
+.container-carousel {
   position: relative;
-  top: -100px;
+  top: -45px;
+  margin-top: 24px;
   z-index: 0;
 }
 
 .container-infissi {
+  position: relative;
+  top: -45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +164,104 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0px 50px 0px;
-  gap: 400px;
-  font-size: 16px;
+  margin: 40px 0px 40px 0px;
+  gap: 200px;
+  width: 100%;
+}
+
+.card > a > img {
+  background-color: whitesmoke;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.card-text {
+  width: 100%;
+  text-align: center;
+}
+
+.card-body > a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-body > a:hover {
+  color: black;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 100px 0px 100px 60px;
+  width: 60%;
+}
+
+.text-title {
+}
+
+.text > p {
+}
+
+.container-text2 {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin: 100px 0px 100px 60px;
+  margin-left: 700px;
+  width: 60%;
+}
+
+.text-title2 {
+}
+
+.text2 > p {
+}
+
+.container-text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  padding: 40px;
+  background-color: rgb(189, 15, 15);
+}
+
+.text-title3 > h3 {
+  color: white;
+}
+
+.text3 > p {
+  color: white;
+}
+
+.container-text4 {
+}
+
+.text-title4 {
+}
+
+.text-subtitle4 {
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 35%;
+}
+
+.input-label {
+}
+
+.input-field {
+}
+
+.input-textarea {
 }
