@@ -22,7 +22,6 @@ body {
 .container-top-bar {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   background-color: rgb(236, 235, 235);
 }
@@ -32,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 15px 0px 15px 20px;
+  margin: 5px;
   font-size: 15px;
 }
 
@@ -109,6 +108,7 @@ body {
   position: relative;
   background-color: whitesmoke;
   padding: 20px 0 20px 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -142,20 +142,19 @@ span {
 
 .container-carousel {
   position: relative;
-  top: -45px;
   margin-top: 24px;
   z-index: 0;
 }
 
 .container-infissi {
   position: relative;
-  top: -45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 80px 0px 80px 0px;
+  margin-top: 50px;
   background-color: whitesmoke;
 }
 
@@ -207,7 +206,7 @@ span {
   width: 60%;
 }
 
-.text-title {
+.text-title > h3 {
 }
 
 .text > p {
@@ -225,17 +224,32 @@ span {
   flex-direction: column;
   text-align: end;
   margin-top: 100px;
+  margin-bottom: 100px;
   margin-left: 690px;
   width: 60%;
 }
 
-.text-title2 {
+.text-title2 > h3 {
 }
 
 .text2 > p {
 }
 
 .container-text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 100px 0px 100px 60px;
+  width: 60%;
+}
+
+.text-title3 > h3 {
+}
+
+.text3 > p {
+}
+
+.container-text4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,23 +259,55 @@ span {
   background-color: rgb(189, 15, 15);
 }
 
-.text-title3 > h3 {
+.button-more {
+  width: 10%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 8px;
+  margin: 12px 0px 0px 12px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.button-more:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.button-more-services {
+  width: 10%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 8px;
+  margin: 12px 0px 0px 1010px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.button-more-services:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.text-title4 > h3 {
   color: white;
   margin-bottom: 40px;
 }
 
-.text3 {
+.text4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.text3 > p {
+.text4 > p {
   color: white;
 }
 
-.text3 > button {
+.text4 > button {
   font-size: 16px;
   color: black;
   border: 1px solid white;
@@ -270,13 +316,13 @@ span {
   transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.text3 > button:hover {
+.text4 > button:hover {
   background-color: white;
   color: black;
   transform: scale(1.1);
 }
 
-.container-text4 {
+.container-text5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,14 +330,14 @@ span {
   margin: 120px 60px 60px 60px;
 }
 
-.text-title4 {
+.text-title5 {
   position: relative;
   left: 400px;
   top: 100px;
   width: 345px;
 }
 
-.text-subtitle4 {
+.text-subtitle5 {
   position: relative;
   left: 400px;
   top: 120px;
@@ -370,9 +416,9 @@ span {
 
 .button2 {
   position: relative;
-  padding: 10px;
+  padding: 6px 0px;
   border: 2px red solid;
-  border-radius: 12px;
+  border-radius: 18px;
   left: 375px;
   top: 20px;
   width: 60px;
@@ -383,4 +429,89 @@ span {
   background-color: red;
   color: white;
   transform: scale(1.1);
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  height: 40vh;
+  gap: 50px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 250px;
+  gap: 10px;
+}
+
+.item-title {
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.item-title > h4 {
+  font-size: 18px;
+}
+
+.item-text {
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.item-list > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-list > li > a:hover {
+  color: red;
+}
+
+.button-footer {
+  font-size: 14px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 6px 0px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.button-footer:hover {
+  transform: scale(1.1);
+}
+
+.low-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6vh;
+  background-color: rgb(236, 235, 235);
+}
+
+.low-bar > p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.low-bar > p > a {
+  text-decoration: none;
+  color: red;
 }
