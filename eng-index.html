@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Più D'amico Più</title>
+    <link rel="stylesheet" href="piudamicopiu.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/82742da272.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-box">
+      <div class="container-top-bar">
+        <div class="top-bar">
+          <div class="left-items">
+            <div class="email">
+              <a href="mailto:info@damicopiu.it">
+                <i class="fa-regular fa-envelope" style="color: #f00505"></i>
+                info@damicopiu.it
+              </a>
+            </div>
+
+            <span style="cursor: default">&vert;</span>
+
+            <a href="https://www.facebook.com/damicopiu"
+              ><i class="fa-brands fa-facebook" style="color: #f00505"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/piudamicopiu/?fbclid=IwAR0QxvkshX3Fl6yk2qZszdBAI3j7Rwgpt-zZKiueHp69E4PZCzIwyvjPQgM"
+              ><i class="fa-brands fa-instagram" style="color: #f00505"></i>
+            </a>
+
+            <a
+              href="https://www.google.it/maps/place/Pi%C3%B9+D'Amico+Pi%C3%B9/@38.1452191,13.3259329,16z/data=!3m1!4b1!4m6!3m5!1s0x1319e8ce6e21eb91:0x60becc726e4609e4!8m2!3d38.1452191!4d13.3285132!16s%2Fg%2F1thbm_tk?entry=ttu"
+              ><i class="fa-solid fa-map-pin" style="color: #f00505"></i
+            ></a>
+
+            <a href="whatsapp://send?phone=+393939142355"
+              ><i class="fa-brands fa-whatsapp" style="color: #f00505"></i
+            ></a>
+          </div>
+
+          <div class="right-items">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><img
+                  src="./imgs/gb.png"
+                  alt="Inglese"
+                  style="height: 15px; width: 25px"
+                />
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./index.html"
+                    ><img
+                      src="./imgs/it.png"
+                      alt="Italiano"
+                      style="height: 15px; width: 25px"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <ul class="items-menu">
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-header">
+        <div class="nav-container">
+          <a href="./index.html"
+            ><img
+              src="./imgs/logo.png"
+              alt="logo"
+              style="width: 250px; height: 60px; margin-left: 20px"
+          /></a>
+
+          <nav>
+            <ul class="menu-list">
+              <a href="#">Home</a>
+              <span style="cursor: default">&vert;</span>
+              <div class="dropdown-products">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Products</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Windows</a></li>
+                  <li><a class="dropdown-item" href="#">Internal Doors</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Security Doors</a>
+                  </li>
+                </ul>
+              </div>
+              <span style="cursor: default">&vert;</span>
+              <a href="#">Promotions</a>
+              <span style="cursor: default">&vert;</span>
+              <a href="#">News</a>
+              <span style="cursor: default">&vert;</span>
+              <a href="#">Contact Us</a>
+              <span style="cursor: default">&vert;</span>
+              <li style="cursor: pointer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container-main">
+        <div class="container-carousel">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                  src="./imgs/145_grande.jpg"
+                  class="d-block w-100"
+                  style="width: 100%; height: 1000px"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./imgs/144_grande.jpg"
+                  class="d-block w-100"
+                  style="width: 100%; height: 1000px"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./imgs/143_grande.jpg"
+                  class="d-block w-100"
+                  style="width: 100%; height: 1000px"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./imgs/146_grande.jpg"
+                  class="d-block w-100"
+                  style="width: 100%; height: 1000px"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./imgs/148_grande.jpg"
+                  class="d-block w-100"
+                  style="width: 100%; height: 1000px"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container-infissi">
+          <div class="infissi-title">
+            <h3>OUR TYPES OF WINDOW FRAMES</h3>
+          </div>
+          <hr style="height: 10px; width: 85%; border-radius: 6px" />
+
+          <div class="container-infissi-list">
+            <ul class="infissi-list">
+              <div class="card" style="width: 12rem; border: none">
+                <a href="./pages/infissi-legno.html"
+                  ><img
+                    src="./imgs/ico-L3-3.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <a
+                    href="./pages/infissi-legno.html"
+                    class="card-title"
+                    style="color: #a27947; font-weight: 700; font-size: 20px"
+                    >WOOD</a
+                  >
+                  <p class="card-text" style="color: #a27947">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A,
+                    quas.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 12rem; border: none">
+                <a href="./pages/infissi-alluminio.html"
+                  ><img
+                    src="./imgs/icone-A4.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <a
+                    href="./pages/infissi-alluminio.html"
+                    class="card-title"
+                    style="color: gray; font-weight: 700; font-size: 20px"
+                    >ALUMINIUM</a
+                  >
+                  <p class="card-text" style="color: gray">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A,
+                    quas.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 12rem; border: none">
+                <a href="./pages/infissi-legno-alluminio.html"
+                  ><img
+                    src="./imgs/ico-LA3-2.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <a
+                    href="./pages/infissi-legno-alluminio.html"
+                    class="card-title"
+                    style="color: gray; font-weight: 700; font-size: 20px"
+                    >WOOD/ALUMINIUM</a
+                  >
+                  <p class="card-text" style="color: gray">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A,
+                    quas.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 12rem; border: none">
+                <a href="./pages/infissi-pvc.html"
+                  ><img
+                    src="./imgs/icone-PVC3-2.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <a
+                    href="./pages/infissi-pvc.html"
+                    class="card-title"
+                    style="color: #a1b7c0; font-weight: 700; font-size: 20px"
+                    >PVC</a
+                  >
+                  <p class="card-text" style="color: #a1b7c0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A,
+                    quas.
+                  </p>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-text">
+          <div class="text-title">
+            <h3>WHY BUY FROM US?</h3>
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae quos cupiditate fugiat reiciendis facere dolorem magni
+              saepe placeat officia? Necessitatibus nisi maxime deserunt
+              architecto doloribus, obcaecati a temporibus, vitae minus nihil
+              laudantium eligendi repellendus tempora itaque praesentium
+              distinctio id aspernatur! Eligendi repellendus at aut quasi
+              possimus nostrum nesciunt exercitationem, temporibus labore,
+              provident sequi incidunt! Corporis perferendis vitae aspernatur
+              soluta itaque ducimus qui corrupti aliquam neque modi unde,
+              tempora, tempore ullam odit? Odio tempore delectus, ad beatae
+              velit veniam aspernatur. Accusamus mollitia ipsa excepturi nobis
+              dolor vel quos nesciunt quisquam repudiandae odit incidunt dolorum
+              nam, optio culpa quaerat eligendi pariatur facilis.
+            </p>
+          </div>
+          <button class="button-more">FIND OUT MORE</button>
+        </div>
+
+        <hr class="divider2" style="height: 4px; width: 25%" />
+
+        <div class="container-text2">
+          <div class="text-title2"><h3>OUR SERVICES</h3></div>
+          <div class="text2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              nemo quidem praesentium tempora repellendus, optio quam neque, ad
+              molestias sint omnis distinctio quisquam dolorum modi expedita
+              inventore sit voluptatum adipisci explicabo facilis velit, dolorem
+              reiciendis consequatur! Possimus id, dignissimos at suscipit ad
+              veniam? Minus doloribus, tempora, eveniet expedita hic suscipit
+              voluptate error officiis aliquid mollitia, unde quae commodi omnis
+              consequatur accusantium cumque at quod deserunt obcaecati? Quod
+              vitae nostrum consectetur, minima unde deleniti qui eaque eligendi
+              vero non asperiores in optio aliquid cupiditate laborum quibusdam
+              maiores ea doloremque modi officia nobis laudantium? Rem assumenda
+              temporibus magnam iure officiis quos voluptatum?
+            </p>
+          </div>
+          <button class="button-more-services">FIND OUT MORE</button>
+        </div>
+
+        <hr class="divider2" style="height: 4px; width: 25%" />
+
+        <div class="container-text3">
+          <div class="text-title3">
+            <h3>HOW TO MEASURE YOUR DOORS?</h3>
+          </div>
+          <div class="text3">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+              corporis molestiae cumque fugit labore expedita vero? Repudiandae
+              qui dolorem nobis, totam quisquam officia harum similique! Optio
+              impedit quos ut tempora omnis ullam adipisci, tenetur vel
+              architecto enim, minima ex, provident dolorum dignissimos!
+              Perspiciatis consequatur pariatur tempora molestias repudiandae,
+              illo recusandae commodi fuga cumque ipsum, ea consequuntur
+              architecto libero nostrum error quam maiores vero cupiditate in
+              doloribus ratione. Accusamus, autem sit consequatur odit velit
+              laboriosam hic tenetur! Doloribus rem odio tempore quo harum
+              voluptatum reiciendis! Obcaecati consectetur neque asperiores,
+              est, possimus, harum perferendis repellendus facere laudantium
+              iure exercitationem? Exercitationem, provident natus.
+            </p>
+          </div>
+          <button class="button-more">FIND OUT MORE</button>
+        </div>
+
+        <div class="container-text4">
+          <div class="text-title4"><h3>BOOK AN APPOINTMENT</h3></div>
+          <div class="text4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              corporis, reiciendis quia, quidem asperiores doloremque
+            </p>
+            <button style="width: 10%">Book</button>
+          </div>
+        </div>
+
+        <div class="container-text5">
+          <div class="text-title5"><h3>WANT MORE INFORMATION?</h3></div>
+          <div class="text-subtitle5">
+            <h4>Contact us or fill out the form</h4>
+          </div>
+          <div class="container-contacts">
+            <ul class="contacts-list">
+              <a href="mailto:info@damicopiu.it"
+                ><i class="fa-regular fa-envelope" style="color: #f00505"></i>
+                info@damicopiu.it</a
+              >
+              <a href="https://www.instagram.com/damicopiu/"
+                ><i class="fa-brands fa-instagram" style="color: #f00505"></i>
+                Instagram</a
+              >
+              <a href="https://www.facebook.com/damicopiu"
+                ><i class="fa-brands fa-facebook" style="color: #f00505"></i>
+                Facebook</a
+              >
+              <a href="whatsapp://send?phone=+393939142355"
+                ><i class="fa-brands fa-whatsapp" style="color: #f00505"></i>
+                +39 3939142355</a
+              >
+            </ul>
+          </div>
+          <hr class="divider3" />
+          <div class="container-form">
+            <form action="mailto:info@damicopiu.it" class="contacts-form">
+              <label class="input-label" for="">Full Name</label>
+              <input
+                class="input-field"
+                placeholder="Name and Surname"
+                type="text"
+              />
+              <label class="input-label">E-mail</label>
+              <input
+                class="input-field"
+                placeholder="exemple@gmail.com"
+                type="email"
+              />
+              <label class="input-label" for="">Subject</label>
+              <input class="input-field" placeholder="Subject" type="subject" />
+
+              <label class="input-label" for="">Message</label>
+              <textarea
+                class="input-textarea"
+                placeholder="Text area"
+              ></textarea>
+              <button class="button2">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-footer">
+        <div class="footer-items">
+          <div class="item">
+            <div class="item-title"><h4>PIÙ D'AMICO PIÙ</h4></div>
+            <div class="item-text">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolores, dolorum iusto architecto ab earum eius. Quo illo odio
+                nam consequuntur.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title"><h4>IN EVIDENCE</h4></div>
+            <div class="item-text">
+              <ul class="item-list">
+                <li><a href="#">Our Products</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title"><h4>CONTACTS</h4></div>
+            <div class="item-text">
+              <ul class="item-list">
+                <li>
+                  <a href="mailto:info@damicopiu.it">
+                    <i
+                      class="fa-regular fa-envelope"
+                      style="color: #f00505"
+                    ></i>
+                    info@damicopiu.it
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/damicopiu/">
+                    <i
+                      class="fa-brands fa-instagram"
+                      style="color: #f00505"
+                    ></i>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/damicopiu">
+                    <i class="fa-brands fa-facebook" style="color: #f00505"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="whatsapp://send?phone=+393939142355">
+                    <i class="fa-brands fa-whatsapp" style="color: #f00505"></i>
+                    +39 3939142355
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title"><h4>BOOK AN APPOINTMENT</h4></div>
+            <div class="item-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                reiciendis?
+              </p>
+              <button class="button-footer">BOOK</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="low-bar">
+          <p>
+            Più D'amico Più @ 2024 - P.I. 06536660829 - Web Developed by
+            <a href="https://github.com/DavideDamico">Davide D'amico</a>
+          </p>
+        </div>
+      </div>
+      <button id="scrollTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up" style="color: white"></i>
+      </button>
+    </div>
+    <script src="piudamicopiu.js"></script>
+  </body>
+</html>
