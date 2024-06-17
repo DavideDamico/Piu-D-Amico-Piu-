@@ -146,6 +146,11 @@ span {
   z-index: 0;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
 .container-infissi {
   position: relative;
   display: flex;
@@ -260,7 +265,7 @@ span {
 }
 
 .button-more {
-  width: 11%;
+  width: 125px;
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
@@ -276,7 +281,7 @@ span {
 }
 
 .button-more-services {
-  width: 11%;
+  width: 125px;
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
