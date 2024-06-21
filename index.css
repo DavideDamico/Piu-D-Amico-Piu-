@@ -332,7 +332,7 @@ span {
   flex-direction: column;
   justify-content: center;
   width: 95%;
-  margin: 120px 60px 60px 60px;
+  margin: 120px 60px 120px 60px;
 }
 
 .text-title5 {
@@ -375,12 +375,12 @@ span {
 
 .divider3 {
   position: relative;
-  width: 38%;
+  width: 34%;
   padding: 2px;
   margin: 0px;
   border-radius: 12px;
   background-color: red;
-  top: 150px;
+  top: 70px;
   left: 49.3%;
   transform: translate(-50%, -50%) rotate(90deg);
 }
@@ -389,7 +389,7 @@ span {
   position: relative;
   top: -140px;
   left: 57%;
-  width: 80%;
+  width: 30%;
 }
 
 .contacts-form {
@@ -397,26 +397,6 @@ span {
   flex-direction: column;
   width: 30%;
   gap: 20px;
-}
-
-.input-label {
-  font-size: 20px;
-}
-
-.input-field {
-  padding: 10px;
-  border: 2px red solid;
-  border-radius: 12px;
-}
-
-.input-field:focus {
-  border: 2px red solid;
-}
-
-.input-textarea {
-  padding: 10px;
-  border: 2px red solid;
-  border-radius: 12px;
 }
 
 .button2 {

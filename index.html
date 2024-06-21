@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Più D'amico Più</title>
-    <link rel="stylesheet" href="piudamicopiu.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -110,7 +110,7 @@
 
           <nav>
             <ul class="menu-list">
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
               <span style="cursor: default">&vert;</span>
               <div class="dropdown-products">
                 <a
@@ -127,21 +127,21 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="./pages/porte-portoni/porte-index.html"
+                      href="./pages/porte-portoni/porte-index.html#title-porte-interne"
                       >Porte interne</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item"
-                      href="./pages/porte-portoni/porte-index.html"
+                      href="./pages/porte-portoni/porte-index.html#title-porte-blindate"
                       >Porte blindate</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item"
-                      href="./pages/porte-portoni/porte-index.html"
+                      href="./pages/porte-portoni/porte-index.html#title-porte-tagliafuoco"
                       >Porte Tagliafuoco</a
                     >
                   </li>
@@ -165,7 +165,7 @@
               <span style="cursor: default">&vert;</span>
               <a href="#">News</a>
               <span style="cursor: default">&vert;</span>
-              <a href="#">Contattaci</a>
+              <a href="#contact-form">Contattaci</a>
               <span style="cursor: default">&vert;</span>
               <li style="cursor: pointer">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -428,7 +428,7 @@
           </div>
         </div>
 
-        <div class="container-text5">
+        <div class="container-text5" id="contact-form">
           <div class="text-title5"><h3>VUOI PIÙ INFORMAZIONI?</h3></div>
           <div class="text-subtitle5">
             <h4>Contattaci o riempi il form</h4>
@@ -457,28 +457,56 @@
           <hr class="divider3" />
 
           <div class="container-form">
-            <form action="mailto:info@damicopiu.it" class="contacts-form">
-              <label class="input-label" for="">Nome Completo</label>
-              <input
-                class="input-field"
-                placeholder="Nome e Cognome"
-                type="text"
-              />
-              <label class="input-label">E-mail</label>
-              <input
-                class="input-field"
-                placeholder="esempio@gmail.com"
-                type="email"
-              />
-              <label class="input-label" for="">Oggetto</label>
-              <input class="input-field" placeholder="Oggetto" type="oggetto" />
-
-              <label class="input-label" for="">Messaggio</label>
-              <textarea
-                class="input-textarea"
-                placeholder="Area di testo"
-              ></textarea>
-              <button class="button2">Invia</button>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Nome Completo</label>
+                <input
+                  type="name"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Nome e cognome"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="esempio@gmail.com"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputSubject" class="form-label"
+                  >Oggetto dell'email</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSubject"
+                  placeholder="Esempio: Richiesta informazioni"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="textarea" class="form-label">Area di testo</label>
+                <textarea
+                  class="form-control"
+                  id="textarea"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="
+                    background-color: rgba(43, 43, 43, 0.821);
+                    border: none;
+                  "
+                >
+                  Invia
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -580,6 +608,6 @@
         <i class="fa-solid fa-arrow-up" style="color: white"></i>
       </button>
     </div>
-    <script src="piudamicopiu.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

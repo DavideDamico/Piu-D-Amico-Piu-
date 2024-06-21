@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Più D'amico Più</title>
-    <link rel="stylesheet" href="piudamicopiu.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -431,28 +431,47 @@
           </div>
           <hr class="divider3" />
           <div class="container-form">
-            <form action="mailto:info@damicopiu.it" class="contacts-form">
-              <label class="input-label" for="">Full Name</label>
-              <input
-                class="input-field"
-                placeholder="Name and Surname"
-                type="text"
-              />
-              <label class="input-label">E-mail</label>
-              <input
-                class="input-field"
-                placeholder="exemple@gmail.com"
-                type="email"
-              />
-              <label class="input-label" for="">Subject</label>
-              <input class="input-field" placeholder="Subject" type="subject" />
-
-              <label class="input-label" for="">Message</label>
-              <textarea
-                class="input-textarea"
-                placeholder="Text area"
-              ></textarea>
-              <button class="button2">Send</button>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="First and last name"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputSubject" class="form-label"
+                  >Email Subject</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSubject"
+                  placeholder="Example: Request for information"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="textarea" class="form-label">Text Area</label>
+                <textarea
+                  class="form-control"
+                  id="textarea"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
             </form>
           </div>
         </div>
@@ -554,6 +573,6 @@
         <i class="fa-solid fa-arrow-up" style="color: white"></i>
       </button>
     </div>
-    <script src="piudamicopiu.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
