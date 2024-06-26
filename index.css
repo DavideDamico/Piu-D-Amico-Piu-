@@ -519,5 +519,5 @@ span {
   position: fixed;
   bottom: 30px;
   right: 100px;
-  z-index: 1000;
+  z-index: 2;
 }

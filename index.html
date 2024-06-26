@@ -89,7 +89,126 @@
               </ul>
             </div>
             <ul class="items-menu">
-              <li><a href="#">Azienda</a></li>
+              <li style="z-index: 3">
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  Azienda
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                  style="background-color: rgba(245, 245, 245, 0.856)"
+                >
+                  <div class="offcanvas-header">
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      style="
+                        position: absolute;
+                        right: 0;
+                        margin: 20px 20px 0 0;
+                      "
+                    ></button>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./imgs/logo.png"
+                      alt="logo"
+                      style="width: 250px"
+                    />
+                  </div>
+                  <div
+                    class="offcanvas-body"
+                    style="
+                      font-size: 16px;
+                      display: flex;
+                      flex-direction: column;
+                      text-align: center;
+                    "
+                  >
+                    <p>
+                      Più D’Amico Più si distingue per ricerca, innovazione,
+                      design, e un'ampia gamma di prodotti personalizzabili e su
+                      misura, garantendo qualità, convenienza e servizio
+                      clienti. La qualità è assicurata tramite selezione
+                      accurata delle materie prime e processi produttivi sicuri,
+                      con prodotti certificati CE ed ecologici. Il nostro
+                      showroom offre una vasta gamma di prodotti dei marchi
+                      prestigiosi come Dierre, Albini & Fontanot, Fakro,
+                      Adielle, Braga, Blindoor, Virag, Olivari, Hoppe e Cisa.
+                      Uno staff tecnico fornisce consulenza, sopralluogo,
+                      rilievo misure, posa in opera, installazione e
+                      manutenzione.
+                    </p>
+
+                    <p>
+                      Fondata a Palermo nel 2006, Più D’Amico Più è cresciuta
+                      diventando un’attività fiorente nella produzione e vendita
+                      di serramenti e infissi di acciaio, alluminio, legno e
+                      PVC, e porte interne in massello, laccate, in vetro,
+                      laminato plastico e blindate di design. La nostra fabbrica
+                      assicura un alto rapporto qualità-prezzo e controllo
+                      continuo degli ordini, permettendo finiture personalizzate
+                      e consegne rapide grazie a un ampio deposito per pronta
+                      consegna.
+                    </p>
+
+                    <hr style="height: 2px; color: #f00505" />
+
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: center;
+                        gap: 40px;
+                        font-size: 18px;
+                      "
+                    >
+                      <a href="https://www.facebook.com/damicopiu"
+                        ><i
+                          class="fa-brands fa-facebook"
+                          style="color: #f00505"
+                        ></i>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/piudamicopiu/?fbclid=IwAR0QxvkshX3Fl6yk2qZszdBAI3j7Rwgpt-zZKiueHp69E4PZCzIwyvjPQgM"
+                        ><i
+                          class="fa-brands fa-instagram"
+                          style="color: #f00505"
+                        ></i>
+                      </a>
+                      <a
+                        href="https://www.google.it/maps/place/Pi%C3%B9+D'Amico+Pi%C3%B9/@38.1452191,13.3259329,16z/data=!3m1!4b1!4m6!3m5!1s0x1319e8ce6e21eb91:0x60becc726e4609e4!8m2!3d38.1452191!4d13.3285132!16s%2Fg%2F1thbm_tk?entry=ttu"
+                        ><i
+                          class="fa-solid fa-map-pin"
+                          style="color: #f00505"
+                        ></i
+                      ></a>
+                      <a href="whatsapp://send?phone=+393285360299"
+                        ><i
+                          class="fa-brands fa-whatsapp"
+                          style="color: #f00505"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li><a href="./pages/login.html">Login</a></li>
               <li>
                 <a href="./pages/registrazione.html" onclick="">Registrati</a>
@@ -474,6 +593,24 @@
                   class="form-control"
                   id="inputEmail"
                   placeholder="esempio@gmail.com"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputTelefono" class="form-label">Telefono</label>
+                <input
+                  type="phone"
+                  class="form-control"
+                  id="inputTelefono"
+                  placeholder="1234567890"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputLocalità" class="form-label">Località</label>
+                <input
+                  type="place"
+                  class="form-control"
+                  id="inputLocalità"
+                  placeholder="Palermo"
                 />
               </div>
               <div class="col-12">
