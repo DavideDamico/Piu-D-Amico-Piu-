@@ -161,14 +161,14 @@ span {
   justify-content: space-between;
   gap: 70px;
   width: 85vw;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .cards-porte-blindate {
   display: flex;
   justify-content: space-between;
   width: 50vw;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .carousel-item > a > img {
@@ -227,13 +227,33 @@ span {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: black;
   border: none;
   font-size: 24px;
   cursor: pointer;
   padding: 10px;
   margin-top: 370px;
+}
+
+.carousel-controls2,
+.carousel-controls3 {
+  display: flex;
+  gap: 1115px;
+}
+
+.carousel-control-prev2,
+.carousel-control-next2 {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-control-prev3,
+.carousel-control-next3 {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .carousel-controls {

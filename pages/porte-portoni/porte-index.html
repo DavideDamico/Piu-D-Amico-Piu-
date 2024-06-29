@@ -308,6 +308,22 @@
               </div>
             </div>
           </div>
+          <div class="carousel-controls2">
+            <button
+              class="carousel-control-prev2"
+              style="color: black"
+              onclick="scrollCarousel2(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="carousel-control-next2"
+              style="color: black"
+              onclick="scrollCarousel2(1)"
+            >
+              &#10095;
+            </button>
+          </div>
         </div>
 
         <div class="porte-tagliafuoco">
@@ -395,6 +411,22 @@
               </div>
             </div>
           </div>
+          <div class="carousel-controls3">
+            <button
+              class="carousel-control-prev3"
+              style="color: black"
+              onclick="scrollCarousel3(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="carousel-control-next3"
+              style="color: black"
+              onclick="scrollCarousel3(1)"
+            >
+              &#10095;
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -402,7 +434,27 @@
       function scrollCarousel(direction) {
         const carousel = document.querySelector(".cards-porte-interne");
         const cardWidth =
-          carousel.querySelector(".card-porte1").offsetWidth + 70; // Include il gap
+          carousel.querySelector(".card-porte1").offsetWidth + 70;
+        carousel.scrollBy({
+          left: cardWidth * direction,
+          behavior: "smooth",
+        });
+      }
+
+      function scrollCarousel2(direction) {
+        const carousel = document.querySelector(".cards-porte-blindate");
+        const cardWidth =
+          carousel.querySelector(".card-porte1").offsetWidth + 70;
+        carousel.scrollBy({
+          left: cardWidth * direction,
+          behavior: "smooth",
+        });
+      }
+
+      function scrollCarousel3(direction) {
+        const carousel = document.querySelector(".cards-porte-tagliafuoco");
+        const cardWidth =
+          carousel.querySelector(".card-porte1").offsetWidth + 70;
         carousel.scrollBy({
           left: cardWidth * direction,
           behavior: "smooth",
