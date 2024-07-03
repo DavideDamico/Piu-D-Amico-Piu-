@@ -18,7 +18,7 @@ body {
   width: 100%;
   height: auto;
 }
-
+/* Inizio top-bar e header */
 .container-top-bar {
   display: flex;
   justify-content: center;
@@ -79,6 +79,10 @@ body {
   color: red;
 }
 
+.items-menu > li > button:hover {
+  color: red;
+}
+
 .dropdown > a {
   background-color: rgb(236, 235, 235);
   border: none;
@@ -102,6 +106,23 @@ body {
   background-color: transparent;
   border: none;
   color: red;
+}
+
+.dropdown-products:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-products:hover .dropdown-menu a {
+  display: block;
 }
 
 .container-header {
@@ -139,6 +160,7 @@ span {
 .menu-list > a:hover {
   color: red;
 }
+/* Fine top-bar e header */
 
 .container-carousel {
   position: relative;

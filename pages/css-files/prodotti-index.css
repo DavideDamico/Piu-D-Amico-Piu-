@@ -140,121 +140,52 @@ span {
   color: red;
 }
 
-.title {
+.container-main {
+}
+
+.container-title-page {
+}
+
+.container-photo-section1,
+.container-photo-section2,
+.container-photo-section3,
+.container-photo-section4 {
   display: flex;
   justify-content: center;
-  margin: 80px 0;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.porte-interne,
-.porte-blindate,
-.porte-tagliafuoco {
+.container-photo-section5 {
   display: flex;
-  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: 23px;
+}
+
+.container-photo1,
+.container-photo2,
+.container-photo3 {
+  background-color: whitesmoke;
+}
+
+.container-photo1 > a,
+.container-photo2 > a,
+.container-photo3 > a {
+  text-decoration: none;
+}
+
+.photo {
+}
+
+.text-photo {
+  display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  height: 100px;
 }
 
-.cards-porte-interne,
-.cards-porte-tagliafuoco {
-  display: flex;
-  justify-content: space-between;
-  gap: 70px;
-  width: 85vw;
-  overflow: hidden;
-}
-
-.cards-porte-blindate {
-  display: flex;
-  justify-content: space-between;
-  width: 50vw;
-  overflow: hidden;
-}
-
-.carousel-item > a > img {
-  transition: transform 0.3s ease;
-}
-
-.carousel-item > a > img:hover {
-  transform: scale(1.1);
-}
-
-.img-text {
-  position: absolute;
-  margin-left: -40px;
-  margin-bottom: -40px;
-}
-
-.img-text h6 {
-  display: flex;
-  font-size: 18px;
-}
-
-.img-text p {
-  display: flex;
-  text-align: start;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.cards-porte-interne {
-  display: flex;
-  justify-content: space-between;
-  gap: 70px;
-  width: 85vw;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  position: relative;
-}
-
-.carousel-item {
-  position: relative;
-}
-
-.carousel-caption.img-text {
-  position: absolute;
-  bottom: 50px;
-  left: 40px;
-  width: 90%;
-  color: white;
-  padding: 10px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  margin-top: 370px;
-}
-
-.carousel-controls2,
-.carousel-controls3 {
-  display: flex;
-  gap: 1115px;
-}
-
-.carousel-control-prev2,
-.carousel-control-next2 {
-  background-color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.carousel-control-prev3,
-.carousel-control-next3 {
-  background-color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.carousel-controls {
+.text-photo > p {
+  font-size: 20px;
+  font-weight: 700;
 }
